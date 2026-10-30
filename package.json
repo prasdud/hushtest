@@ -1,0 +1,23 @@
+{
+  "name": "hushtest",
+  "version": "0.0.1",
+  "description": "Agent-first API testing CLI. Pre-release placeholder.",
+  "type": "module",
+  "bin": {
+    "hushtest": "bin/hushtest.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasdud/hushtest.git"
+  },
+  "keywords": [
+    "api",
+    "testing",
+    "agents",
+    "cli"
+  ],
+  "license": "MIT"
+}
