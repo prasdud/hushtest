@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - `PHASE.md` implementation outline mapping each phase to the files it creates.
+- Phase 0 scaffold: TypeScript build, CLI entry point with `--help` and `--version`.
+- Vitest smoke tests, CI workflow, and npm scripts for typecheck, test, and pack checks.
 
 ## [0.0.1] - 2026-10-30
 

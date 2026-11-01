@@ -7,8 +7,22 @@
     "hushtest": "bin/hushtest.js"
   },
   "files": [
-    "bin"
+    "bin",
+    "dist"
   ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pack:check": "npm pack --dry-run",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prasdud/hushtest.git"
@@ -19,5 +33,11 @@
     "agents",
     "cli"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsup": "^9.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
 }
